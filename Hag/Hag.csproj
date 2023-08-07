@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6CC7866-4AC3-4393-9D90-4E15C54CC0A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hag</RootNamespace>
+    <AssemblyName>Hag</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Accessibility.dll</HintPath>
+    </Reference>
+    <Reference Include="AmplifyMotion, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\AmplifyMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimationSystem.Recording, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\AnimationSystem.Recording.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimationSystem.Types, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\AnimationSystem.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Autodesk.Fbx.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="Comfort.Unity">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Comfort.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="FilesChecker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\FilesChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Battlestate Games\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Battlestate Games\EFT\EscapeFromTarkov_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aimbot\Aimbot.cs" />
+    <Compile Include="Aimbot\Prediction.cs" />
+    <Compile Include="Aimbot\TargetPlayer.cs" />
+    <Compile Include="Configs\Aimbot.cs" />
+    <Compile Include="Configs\AimbotTarget.cs" />
+    <Compile Include="Configs\AimbotTargetting.cs" />
+    <Compile Include="Configs\Aimbots.cs" />
+    <Compile Include="Configs\BattleMode.cs" />
+    <Compile Include="Configs\Colours.cs" />
+    <Compile Include="Configs\Config.cs" />
+    <Compile Include="Configs\Container.cs" />
+    <Compile Include="Configs\ContainerItem.cs" />
+    <Compile Include="Configs\Corpse.cs" />
+    <Compile Include="Configs\Crosshair.cs" />
+    <Compile Include="Configs\EspHealthbar.cs" />
+    <Compile Include="Configs\EspPlayerBox.cs" />
+    <Compile Include="Configs\EspSkeleton.cs" />
+    <Compile Include="Configs\EspText.cs" />
+    <Compile Include="Configs\Exfil.cs" />
+    <Compile Include="Configs\Grenade.cs" />
+    <Compile Include="Configs\Hud.cs" />
+    <Compile Include="Configs\Item.cs" />
+    <Compile Include="Configs\ItemMisc.cs" />
+    <Compile Include="Configs\LocalPlayer.cs" />
+    <Compile Include="Configs\Menu.cs" />
+    <Compile Include="Configs\Movement.cs" />
+    <Compile Include="Configs\Player.cs" />
+    <Compile Include="Configs\PredictionCrosshair.cs" />
+    <Compile Include="Configs\QualityOfLife.cs" />
+    <Compile Include="Configs\QuestItem.cs" />
+    <Compile Include="Configs\Radar.cs" />
+    <Compile Include="Configs\RadarEntity.cs" />
+    <Compile Include="Configs\Scav.cs" />
+    <Compile Include="Configs\Atmosphere.cs" />
+    <Compile Include="Configs\Weapon.cs" />
+    <Compile Include="Configs\Weapons.cs" />
+    <Compile Include="Drawing\Draw.cs" />
+    <Compile Include="Esp\Caching.cs" />
+    <Compile Include="Esp\ContainerEsp.cs" />
+    <Compile Include="Esp\CorpseEsp.cs" />
+    <Compile Include="Esp\EspConstants.cs" />
+    <Compile Include="Esp\ExfilEsp.cs" />
+    <Compile Include="Esp\GrenadeEsp.cs" />
+    <Compile Include="Esp\ItemEsp.cs" />
+    <Compile Include="Esp\PlayerEsp.cs" />
+    <Compile Include="Esp\QuestEsp.cs" />
+    <Compile Include="Esp\Radar.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Helpers\Access.cs" />
+    <Compile Include="Helpers\ColourHelper.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Helpers\DumbHook.cs" />
+    <Compile Include="Helpers\ItemPriceHelper.cs" />
+    <Compile Include="Helpers\RaycastHelper.cs" />
+    <Compile Include="Helpers\ResolvedNames.cs" />
+    <Compile Include="Helpers\ShaderHelper.cs" />
+    <Compile Include="Configs\Items.cs" />
+    <Compile Include="Hooks\GarbageCollector.cs" />
+    <Compile Include="Hooks\LootThroughWalls.cs" />
+    <Compile Include="Hooks\SilentAim.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="Menu\Button.cs" />
+    <Compile Include="Menu\Entity.cs" />
+    <Compile Include="Menu\EnumSliders\BoneTypeSlider.cs" />
+    <Compile Include="Menu\EnumSliders\ChamTypeSlider.cs" />
+    <Compile Include="Menu\EnumSliders\CrosshairTypeSlider.cs" />
+    <Compile Include="Menu\EnumSliders\FovTypeSlider.cs" />
+    <Compile Include="Menu\EnumSliders\OpacityTypeSlider.cs" />
+    <Compile Include="Menu\EnumSliders\SkeletonTypeSlider.cs" />
+    <Compile Include="Menu\EnumSliders\TextAlignmentSlider.cs" />
+    <Compile Include="Menu\FloatSlider.cs" />
+    <Compile Include="Drawing\Menu\InitializeMenu.cs" />
+    <Compile Include="Menu\IntSlider.cs" />
+    <Compile Include="Menu\Keybind.cs" />
+    <Compile Include="Drawing\Menu\RenderMenu.cs" />
+    <Compile Include="Menu\SubMenu.cs" />
+    <Compile Include="Menu\TextField.cs" />
+    <Compile Include="Menu\Toggle.cs" />
+    <Compile Include="Misc\Binds.cs" />
+    <Compile Include="Misc\Hud.cs" />
+    <Compile Include="Misc\LocalPlayer.cs" />
+    <Compile Include="Misc\Movement.cs" />
+    <Compile Include="Misc\QualityOfLife.cs" />
+    <Compile Include="Misc\WeaponMods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\Direct2DRenderer.cs" />
+    <Compile Include="Renderer\DwmApi.cs" />
+    <Compile Include="Renderer\HelperMethods.cs" />
+    <Compile Include="Renderer\OverlayCreationOptions.cs" />
+    <Compile Include="Renderer\OverlayManager.cs" />
+    <Compile Include="Renderer\OverlayWindow.cs" />
+    <Compile Include="Renderer\PInvoke.cs" />
+    <Compile Include="Renderer\StickyOverlayWindow.cs" />
+    <Compile Include="Renderer\User32.cs" />
+    <Compile Include="SDK\ContainerItems.cs" />
+    <Compile Include="SDK\Containers.cs" />
+    <Compile Include="SDK\Corpses.cs" />
+    <Compile Include="SDK\ExfilPoints.cs" />
+    <Compile Include="SDK\Grenades.cs" />
+    <Compile Include="SDK\Items.cs" />
+    <Compile Include="SDK\Players.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

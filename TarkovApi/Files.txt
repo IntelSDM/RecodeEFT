@@ -1,0 +1,2 @@
+https://dev.sp-tarkov.com/SPT-AKI/Server/src/branch/development/project/assets/database/templates
+https://github.com/TarkovTracker/tarkovdata
