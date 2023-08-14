@@ -10,11 +10,11 @@ I only worked on this for about 2 months before I got too bored to continue with
     style="width: 75%;" />
 </p>
 <p align="center">
-  <img src="./Images/1.png"
+  <img src="./Images/2.png"
     style="width: 75%;" />
 </p>
 <p align="center">
-  <img src="./Images/1.png"
+  <img src="./Images/3.png"
     style="width: 75%;" />
 </p>
 
